@@ -9,11 +9,11 @@ namespace Lesson_6_Class
 {
     public class Product
     {
-        public string _name { get; private set; }
-        public int _quantity { get; private set; }
-        public decimal _price { get; private set; }
+        public string _name { get; set; }
+        public int _quantity { get; set; }
+        public decimal _price { get; set; }
 
-        public TypeProducts _typeProducts;
+        public TypeProducts _typeProducts; // только так отображается 
 
 
         public Product() { }

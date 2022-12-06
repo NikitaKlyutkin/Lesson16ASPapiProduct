@@ -11,7 +11,7 @@ namespace Lesson16ASPapiProduct.Serivces
 
         public void AddSomeProducts(List<Product> products);
 
-
+        public List<T> SortByType<T>() where T : Product;
         public List<Product> GetAllProducts();
 
         public void ReplaceProduct(int idProduct, Product product);
