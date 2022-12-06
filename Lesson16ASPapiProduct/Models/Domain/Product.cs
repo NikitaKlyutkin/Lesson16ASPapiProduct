@@ -15,6 +15,7 @@ namespace Lesson_6_Class
 
         public TypeProducts _typeProducts;
 
+
         public Product() { }
 
         public Product(string name, int quantity, decimal price, TypeProducts typeProducts)
