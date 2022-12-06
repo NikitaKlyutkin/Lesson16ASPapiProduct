@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lesson_6_Class
 {
-    internal class Food : Product
+    public class Food : Product
     {
         public Food(string name, int quantity, decimal price):base(name, quantity, price, TypeProducts.Food)
         {

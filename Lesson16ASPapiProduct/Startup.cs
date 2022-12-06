@@ -1,3 +1,5 @@
+using Lesson16ASPapiProduct.Models;
+using Lesson16ASPapiProduct.Serivces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +30,8 @@ namespace Lesson16ASPapiProduct
         {
 
             services.AddControllers();
+            services.AddSingleton(new Inventorycs("Products.json"));
+            services.AddTransient<IActionWithProductService, ActionWithProductService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Lesson16ASPapiProduct", Version = "v1" });

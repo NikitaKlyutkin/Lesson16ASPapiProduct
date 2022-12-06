@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace Lesson_6_Class
 {
-    internal class Product
+    public class Product
     {
         public string _name { get; private set; }
         public int _quantity { get; private set; }
         public decimal _price { get; private set; }
 
         public TypeProducts _typeProducts;
+
+        public Product() { }
 
         public Product(string name, int quantity, decimal price, TypeProducts typeProducts)
         {

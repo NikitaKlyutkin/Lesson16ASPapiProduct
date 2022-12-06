@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lesson_6_Class
 {
-    internal class Chemical :Product
+    public class Chemical :Product
     {
 
         public Chemical(string name, int quantity, decimal price) : base(name, quantity, price, TypeProducts.Chemicals)
