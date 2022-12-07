@@ -1,4 +1,4 @@
-﻿using Lesson_6_Class;
+﻿using Lesson16ASPapiProduct.Models.Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +15,7 @@ namespace Lesson16ASPapiProduct.Models
     public class Inventorycs
     {
         public List<Product> products = new List<Product>();
+
         public Inventorycs(string jsonFile)
         {
             string jsonString = File.ReadAllText(jsonFile);

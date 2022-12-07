@@ -1,11 +1,4 @@
-﻿using Lesson16ASPapiProduct.Models.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lesson_6_Class
+﻿namespace Lesson16ASPapiProduct.Models.Domain
 {
     public class Product
     {
@@ -13,18 +6,14 @@ namespace Lesson_6_Class
         public int _quantity { get; set; }
         public decimal _price { get; set; }
 
-        public TypeProducts _typeProducts; // только так отображается 
-
-
         public Product() { }
 
-        public Product(string name, int quantity, decimal price, TypeProducts typeProducts)
+        public Product(string name, int quantity, decimal price)
         {
             _name = name;
             _quantity = quantity;
             _price = price;
-            _typeProducts = typeProducts;
+
         }
     }
-
 }

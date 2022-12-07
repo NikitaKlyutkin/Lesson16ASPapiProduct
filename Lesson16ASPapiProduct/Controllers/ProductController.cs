@@ -1,5 +1,5 @@
 ﻿
-using Lesson_6_Class;
+using Lesson16ASPapiProduct.Models.Domain;
 using Lesson16ASPapiProduct.Serivces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,6 +33,12 @@ namespace Lesson_16.Controllers
         public IActionResult GetAllProduct()
         {
             return Ok(action.GetAllProducts());
+        }
+
+        [HttpGet]
+        public IActionResult SummAllProduct()
+        {
+            return Ok(action.SummAllProducts());
         }
     }
 }
